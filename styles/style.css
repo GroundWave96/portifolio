@@ -58,7 +58,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 25px;
-    line-height: 39.64px;
+    line-height: 33px;
 }
 
 .apresentacao__sobremim {
@@ -87,6 +87,15 @@ body {
     font-size: 1.5rem;
     font-family: var(--fonte-secundaria);
     text-align: justify;
+}
+
+.apresentacao__conteudo__lista {
+    font-size: 1.5rem;
+    font-family: var(--fonte-secundaria);
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    gap: 1.57rem;
 }
 
 .apresentacao__conteudo__link {
