@@ -170,4 +170,16 @@ body {
     .rodape {
         font-size: 1.3rem;
     }
+
+    .apresentacao__conteudo__texto {
+        font-size: 1.3rem;
+    }
+
+    .apresentacao__conteudo__link {
+        font-size: 1.3rem;
+    }
+
+    .apresentacao__links__subtitulo {
+        font-size: 1.3rem;
+    }
 }
