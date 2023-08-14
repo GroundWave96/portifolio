@@ -21,12 +21,6 @@ body {
     color: var(--cor-secundaria);
 }
 
-footer {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-}
-
 .cabecalho {
     padding: 2% 0 0 15%;
 }
@@ -57,20 +51,21 @@ footer {
     flex-direction: column;
     gap: 40px;
     width: 50%;
+    line-height: 32.3px;
 }
 
 .apresentacao__curriculo {
     display: flex;
     flex-direction: column;
     gap: 25px;
-    line-height: 34px;
+    line-height: 39.64px;
 }
 
 .apresentacao__sobremim {
     display: flex;
     flex-direction: column;
     gap: 25px;
-    line-height: 33.5px;
+    line-height: 34.1px;
 }
 
 .conteudo__titulo {
@@ -152,7 +147,7 @@ footer {
 
 @media (max-width: 1200px) {
     .cabecalho {
-        padding: 10%;
+        padding: 10% 2% 5% 2%;
     }
 
     .cabecalho__menu {
@@ -168,4 +163,11 @@ footer {
         width: auto;
     }
 
+    .apresentacao__imagem {
+        width: 95%;
+    }
+
+    .rodape {
+        font-size: 1.3rem;
+    }
 }
