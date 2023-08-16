@@ -82,7 +82,7 @@ nav {
     text-decoration: none;
 }
 
-.apresentacao {
+.principal {
     padding: 3% 15%;
     display: flex;
     align-items: center;
@@ -236,9 +236,10 @@ nav {
 }
 
 @media (max-width: 1200px) {
-    body {
+
+    body,
+    html {
         overflow-x: hidden;
-        overflow-y: visible;
     }
 
     .nav-list {
@@ -268,7 +269,7 @@ nav {
         transform: translateX(0);
     }
 
-    .apresentacao {
+    .principal {
         flex-direction: column-reverse;
         padding: 7%;
     }
