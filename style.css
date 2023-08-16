@@ -210,6 +210,31 @@ nav {
     transform: rotate(45deg) translate(-5px, -7px);
 }
 
+.rodape-index {
+    position: relative;
+    bottom: 17px;
+}
+
+.rodape-about {
+    position: relative;
+    top: 10px;
+}
+
+.rodape-curriculum {
+    position: relative;
+    bottom: 9px;
+}
+
+.rodape-projects {
+    position: relative;
+    bottom: 0px;
+}
+
+.rodape-contact {
+    position: relative;
+    bottom: 0px;
+}
+
 @media (max-width: 1200px) {
     body {
         overflow-x: hidden;
@@ -258,6 +283,31 @@ nav {
 
     .rodape {
         font-size: 1.3rem;
+    }
+
+    .rodape-index {
+        position: relative;
+        bottom: 0px;
+    }
+
+    .rodape-about {
+        position: relative;
+        top: 0px;
+    }
+
+    .rodape-curriculum {
+        position: relative;
+        bottom: 0px;
+    }
+
+    .rodape-projects {
+        position: relative;
+        bottom: 0px;
+    }
+
+    .rodape-contact {
+        position: relative;
+        bottom: 0px;
     }
 
     .apresentacao__conteudo__texto {
