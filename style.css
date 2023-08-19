@@ -16,7 +16,7 @@
 }
 
 html {
-    height: -webkit-fil-available;
+    height: -webkit-fill-available;
 }
 
 body {
@@ -24,7 +24,7 @@ body {
     background-color: var(--cor-secundaria);
     color: var(--cor-terciaria);
     overflow-y: hidden;
-    height: -webkit-fil-available;
+    height: -webkit-fill-available;
 }
 
 a {
