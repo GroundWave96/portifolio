@@ -15,16 +15,11 @@
     padding: 0;
 }
 
-html {
-    height: -webkit-fill-available;
-}
-
 body {
     box-sizing: border-box;
     background-color: var(--cor-secundaria);
     color: var(--cor-terciaria);
     overflow-y: hidden;
-    height: -webkit-fill-available;
 }
 
 a {
