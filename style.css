@@ -247,7 +247,7 @@ header {
     }
 
     .menu.active .menu-list {
-        height: 92vh;
+        height: 92svh;
         visibility: visible;
         overflow-y: auto;
     }
