@@ -229,6 +229,7 @@ header {
 
 @media (max-width: 1000px) {
     .menu-list {
+        padding-bottom: 8vh;
         display: flex;
         flex-direction: column;
         position: absolute;
@@ -244,7 +245,6 @@ header {
         visibility: hidden;
         overflow-y: hidden;
         font-size: 1.5rem;
-        padding-bottom: 8vh;
     }
 
     .menu.active .menu-list {
