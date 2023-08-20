@@ -244,10 +244,11 @@ header {
         visibility: hidden;
         overflow-y: hidden;
         font-size: 1.5rem;
+        bottom: 8vh;
     }
 
     .menu.active .menu-list {
-        height: 92svh;
+        height: 100svh;
         visibility: visible;
         overflow-y: auto;
     }
