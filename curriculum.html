@@ -4,63 +4,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Curriculo</title>
-    <link rel="stylesheet" href="/style.css">
+    <title>Sobre mim</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
+
     <header>
-        <nav>
-            <a class="logo" href="/">GH</a>
-            <div class="mobile-menu">
+        <nav id="menu" class="menu">
+            <a class="menu-logo" href="/">GH</a>
+            <div id="menu-mobile-btn" class="menu-mobile-btn">
                 <div class="line1"></div>
                 <div class="line2"></div>
                 <div class="line3"></div>
             </div>
-            <ul class="nav-list">
-                <li><a href="/index.html">Início</a></li>
-                <li><a href="/about.html">Sobre mim</a></li>
-                <li><a href="/projects.html">Projetos</a></li>
-                <li><a href="/curriculum.html">Currículo</a></li>
-                <li><a href="/contact.html">Contato</a></li>
+            <ul class="menu-list">
+                <li><a class="menu-list-btn" href="/index.html">Início</a></li>
+                <li><a class="menu-list-btn" href="/about.html">Sobre mim</a></li>
+                <li><a class="menu-list-btn" href="/projects.html">Projetos</a></li>
+                <li><a class="menu-list-btn" href="/curriculum.html">Currículo</a></li>
+                <li><a class="menu-list-btn" href="/contact.html">Contato</a></li>
             </ul>
         </nav>
     </header>
-    <main class="principal">
-        <section class="apresentacao__curriculo">
-            <h1 class="conteudo__titulo">Currículo</h1>
-            <p class="apresentacao__conteudo__texto">Estudante entusiasmado de Análise e Desenvolvimento de Sistemas no
+
+    <main class="main">
+        <section class="main-content-curriculum">
+            <h1 class="main-content-curriculum-title">Currículo</h1>
+            <p class="main-content-curriculum-text">Estudante de Análise e Desenvolvimento de Sistemas no
                 terceiro semestre, buscando adquirir experiência prática na indústria de software. Com forte
                 paixão pela programação e resolução de problemas, estou ansioso para contribuir com projetos
-                desafiadores enquanto continuo aprendendo e aprimorando minhas habilidades.</p>
-            <h1 class="conteudo__titulo"></h1>
-            <p class="apresentacao__conteudo__texto"></p>
-            <h1 class="conteudo__titulo">Estudos</h1>
-            <ul class="apresentacao__conteudo__lista">
+                desafiadores enquanto aprendendo e aprimorando minhas habilidades.</p>
+            <h1 class="main-content-curriculum-title">Estudos</h1>
+            <ul class="main-content-curriculum-list">
                 <li>Ensino Médio Técnico em Mecatrônica - Colégio Pentágono (2013-2016/Concluído)</li>
                 <li>Graduação em Engenharia Mecânica - UNINOVE (2018-2022/Concluído)</li>
                 <li>C# COMPLETO Programação Orientada a Objetos - Udemy (2021/Concluído)
-                    <a class="apresentacao__conteudo__link"
+                    <a class="main-content-curriculum-link"
                         href="https://www.udemy.com/certificate/UC-7032cf93-bc2b-4326-8b56-193e6ced818a/">Certificado</a>
                 </li>
                 <li>Inglês pré avançado - CNA (2021/Concluído)</li>
                 <li>Graduação em Análise e Desenvolvimento de Sistemas - FATEC (2022-2025/Cursando 3 Semestre)</li>
                 <li>Aprenda a programar em C# com Orientação a Objetos - Alura (2023/Concluído)
-                    <a class="apresentacao__conteudo__link"
+                    <a class="main-content-curriculum-link"
                         href="https://cursos.alura.com.br/degree/certificate/62539642-a151-472f-bb9f-afe21ead9d92">Certificado</a>
                 </li>
                 <li>A partir do zero: HTML e CSS para projetos web - Alura (2023/Cursando)
-                    <a class="apresentacao__conteudo__link" href=""></a>
+                    <a class="main-content-curriculum-link" href=""></a>
                 </li>
                 </li>
                 </li>
             </ul>
         </section>
     </main>
-    <footer class="rodape rodape-curriculum">
-        <p>Desenvolvido por Gabriel Henrique</p>
+
+    <footer class="footer">
+        <div class="footer-icons">
+            <a href="https://github.com/GroundWave96" target="_blank"><i class="fa-brands fa-github"></i></a>
+            <a href="https://instagram.com/gabriel.hfp" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/gabriel-pimentel-12bb83190/" target="_blank"><i
+                    class="fa-brands fa-linkedin"></i></a>
+            <a href="https://api.whatsapp.com/send?phone=+5511953725013&text=Ol%C3%A1%2C+vim+pelo+seu+portif%C3%B3lio%21+%F0%9F%91%8B"
+                target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+        <div class="footer-bottom">
+            <p>Copyright &copy;2023</p>
+            <p>Desenvolvido por Gabriel Henrique</p>
+        </div>
     </footer>
-    <script src="app.js"></script>
+
+    <script src="./app.js"></script>
+
 </body>
 
 </html>

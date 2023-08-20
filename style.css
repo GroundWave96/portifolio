@@ -5,6 +5,7 @@
     --cor-secundaria: #000000;
     --cor-terciaria: #F6F6F6;
     --cor-hover: #272727;
+    --cor-hover2: #4d4d4d;
 
     --fonte-titulo: 'Krona One', sans-serif;
     --fonte-texto: 'Montserrat', sans-serif;
@@ -13,26 +14,35 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-    box-sizing: border-box;
     background-color: var(--cor-secundaria);
     color: var(--cor-terciaria);
-    overflow-y: hidden;
+    font-family: var(--fonte-texto);
 }
 
-a {
-    color: #fff;
+header {
+    position: sticky;
+    top: 0;
+}
+
+.menu-logo {
     text-decoration: none;
-    transition: 0.3s;
+    font-size: 1.5rem;
+    color: var(--cor-primaria);
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    padding: 1rem;
 }
 
-a:hover {
-    opacity: 0.7;
+.menu-logo:hover {
+    text-shadow: var(--cor-primaria) 0 0 5px, var(--cor-primaria) 0 0 5px, var(--cor-primaria) 0 0 5px;
 }
 
-nav {
+.menu {
+    box-sizing: border-box;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -41,34 +51,29 @@ nav {
     height: 8vh;
 }
 
-.site {
-    overflow-x: hidden;
-}
-
-.logo {
-    font-size: 24px;
-    color: var(--cor-primaria);
-    text-transform: uppercase;
-    letter-spacing: 4px;
-}
-
-.nav-list {
+.menu-list {
     list-style: none;
-    color: var(--cor-primaria);
     display: flex;
 }
 
-.nav-list li {
+.menu-list-btn {
+    text-decoration: none;
+    color: var(--cor-terciaria);
     letter-spacing: 3px;
-    margin-left: 32px;
+    margin-left: 10px;
+    padding: 1rem;
 }
 
-.mobile-menu {
+.menu-list-btn:hover {
+    text-shadow: var(--cor-terciaria) 0 0 5px, var(--cor-terciaria) 0 0 5px, var(--cor-terciaria) 0 0 5px;
+}
+
+.menu-mobile-btn {
     display: none;
     cursor: pointer;
 }
 
-.mobile-menu div {
+.menu-mobile-btn div {
     width: 32px;
     height: 2px;
     background-color: var(--cor-primaria);
@@ -76,15 +81,19 @@ nav {
     transition: 0.3s;
 }
 
-.cabecalho__menu__link {
-    font-size: 1.5rem;
-    font-family: var(--fonte-texto);
-    font-weight: 600;
-    color: var(--cor-primaria);
-    text-decoration: none;
+.menu.active .line1 {
+    transform: rotate(-45deg) translate(-8px, 8px);
 }
 
-.principal {
+.menu.active .line2 {
+    opacity: 0;
+}
+
+.menu.active .line3 {
+    transform: rotate(45deg) translate(-5px, -7px);
+}
+
+.main {
     padding: 3% 15%;
     display: flex;
     align-items: center;
@@ -92,7 +101,7 @@ nav {
     gap: 80px;
 }
 
-.apresentacao__conteudo {
+.main-content {
     display: flex;
     flex-direction: column;
     gap: 40px;
@@ -100,240 +109,168 @@ nav {
     line-height: 33px;
 }
 
-.apresentacao__curriculo {
-    display: flex;
-    flex-direction: column;
-    gap: 25px;
-    line-height: 33px;
-}
-
-.apresentacao__sobremim {
-    display: flex;
-    flex-direction: column;
-    gap: 25px;
-    line-height: 33px;
-}
-
-.conteudo__titulo {
-    font-size: 2rem;
-    font-family: var(--fonte-titulo);
-}
-
-.apresentacao__conteudo__titulo {
+.main-content-title {
     font-size: 2rem;
     font-family: var(--fonte-titulo);
     text-align: center;
+    line-height: 40px;
 }
 
-.titulo-destaque {
+.main-content-title-featured {
     color: var(--cor-primaria);
 }
 
-.apresentacao__conteudo__texto {
+.main-content-text {
     font-size: 1.5rem;
     font-family: var(--fonte-texto);
     text-align: justify;
 }
 
-.apresentacao__conteudo__lista {
+.main-content-about {
+    display: flex;
+    flex-direction: column;
+    gap: 38.4px;
+    line-height: 33px;
+}
+
+.main-content-about-title {
+    font-size: 2rem;
+    font-family: var(--fonte-titulo);
+}
+
+.main-content-about-text {
+    font-size: 1.5rem;
+    font-family: var(--fonte-texto);
+    text-align: justify;
+}
+
+.main-content-curriculum {
+    display: flex;
+    flex-direction: column;
+    gap: 36.2px;
+    line-height: 33px;
+}
+
+.main-content-curriculum-title {
+    font-size: 2rem;
+    font-family: var(--fonte-titulo);
+}
+
+.main-content-curriculum-text {
+    font-size: 1.5rem;
+    font-family: var(--fonte-texto);
+    text-align: justify;
+}
+
+.main-content-curriculum-list {
     font-size: 1.5rem;
     font-family: var(--fonte-texto);
     text-align: justify;
     display: flex;
     flex-direction: column;
-    gap: 1.57rem;
+    gap: 1.5rem;
 }
 
-.apresentacao__conteudo__link {
+.main-content-curriculum-link {
     text-decoration: none;
     font-family: var(--fonte-texto);
     font-size: 1.5rem;
     color: var(--cor-primaria);
 }
 
-.apresentacao__links {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    gap: 32px;
+.main-image {
+    width: 38%;
+    border-radius: 8px;
 }
 
-.apresentacao__links__subtitulo {
-    font-family: var(--fonte-titulo);
-    font-weight: 400;
-    font-size: 1.5rem;
+.footer {
+    width: 100%;
+    height: 12vh;
+    background: var(--cor-primaria);
 }
 
-.apresentacao__links__navegacao {
+.footer-icons {
     display: flex;
-    align-items: center;
     justify-content: center;
-    gap: 16px;
-    width: 50%;
-    border-radius: 8px;
-    text-align: center;
-    font-size: 1.5rem;
-    font-family: var(--fonte-texto);
-    font-weight: 600;
-    padding: 21.5px 0;
+}
+
+.footer-icons a {
     text-decoration: none;
-    color: var(--cor-terciaria);
-    border: 2px solid var(--cor-primaria);
+    padding: 10px;
+    background-color: #000000;
+    margin: 10px;
+    border-radius: 50%;
 }
 
-.apresentacao__links__navegacao:hover {
-    background-color: var(--cor-hover);
-}
-
-.apresentacao__imagem {
-    width: 40%;
-    border-radius: 8px;
-}
-
-.rodape {
-    text-align: center;
-    padding: 1%;
-    font-family: var(--fonte-texto);
-    font-size: 1.5rem;
-    color: var(--cor-secundaria);
+.footer-icons a:hover {
     background-color: var(--cor-primaria);
+    transition: 0.5s;
 }
 
-.mobile-menu.active .line1 {
-    transform: rotate(-45deg) translate(-8px, 8px);
+.footer-icons a:hover i {
+    color: var(--cor-secundaria);
+    transition: 0.5s;
 }
 
-.mobile-menu.active .line2 {
-    opacity: 0;
+.footer-icons a i {
+    font-size: 2rem;
+    color: var(--cor-primaria);
 }
 
-.mobile-menu.active .line3 {
-    transform: rotate(45deg) translate(-5px, -7px);
+.footer-bottom {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: var(--cor-secundaria);
+    font-family: var(--fonte-titulo);
+    padding: 10px;
+    gap: 30px;
 }
 
-.rodape-index {
-    position: relative;
-    bottom: 17px;
-}
-
-.rodape-about {
-    position: relative;
-    top: 10px;
-}
-
-.rodape-curriculum {
-    position: relative;
-    bottom: 9px;
-}
-
-.rodape-projects {
-    position: relative;
-    bottom: 0px;
-}
-
-.rodape-contact {
-    position: relative;
-    bottom: 0px;
-}
-
-@media (max-width: 1200px) {
-
-    body,
-    html {
-        overflow-x: hidden;
-    }
-
-    .nav-list {
-        position: absolute;
-        top: 8vh;
-        right: 0;
-        width: 100vw;
-        height: 92svh;
-        background-color: var(--cor-hover);
+@media (max-width: 1000px) {
+    .menu-list {
+        display: flex;
         flex-direction: column;
+        position: absolute;
         align-items: center;
         justify-content: space-around;
-        transform: translateX(100%);
-        transition: transform 0.3s ease-in;
+        width: 100%;
+        top: 8vh;
+        right: 0px;
+        background: var(--cor-hover);
+        transition: .5s;
+        z-index: 1000;
+        height: 0px;
+        visibility: hidden;
+        overflow-y: hidden;
+        font-size: 1.5rem;
     }
 
-    .nav-list li {
-        margin-left: 0;
-        opacity: 0;
+    .menu.active .menu-list {
+        height: 92vh;
+        visibility: visible;
+        overflow-y: auto;
     }
 
-    .mobile-menu {
+    .menu-mobile-btn {
         display: block;
     }
 
-    .nav-list.active {
-        transform: translateX(0);
-    }
-
-    .principal {
+    .main {
         flex-direction: column-reverse;
         padding: 7%;
     }
 
-    .apresentacao__conteudo {
+    .main-content {
         width: auto;
     }
 
-    .apresentacao__imagem {
+    .main-image {
         width: 95%;
     }
 
-    .rodape {
-        font-size: 1.3rem;
-    }
-
-    .rodape-index {
-        position: relative;
-        bottom: 0px;
-    }
-
-    .rodape-about {
-        position: relative;
-        top: 0px;
-    }
-
-    .rodape-curriculum {
-        position: relative;
-        bottom: 0px;
-    }
-
-    .rodape-projects {
-        position: relative;
-        bottom: 0px;
-    }
-
-    .rodape-contact {
-        position: relative;
-        bottom: 0px;
-    }
-
-    .apresentacao__conteudo__texto {
-        font-size: 1.3rem;
-    }
-
-    .apresentacao__conteudo__link {
-        font-size: 1.3rem;
-    }
-
-    .apresentacao__links__subtitulo {
-        font-size: 1.3rem;
-    }
-}
-
-@keyframes navLinkFade {
-    from {
-        opacity: 0;
-        transform: translateX(50px);
-    }
-
-    to {
-        opacity: 1;
-        transform: translateX(0);
+    .footer-bottom {
+        flex-direction: column;
+        gap: 5px;
     }
 }

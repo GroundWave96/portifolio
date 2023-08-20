@@ -5,55 +5,72 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sobre mim</title>
-    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
+
     <header>
-        <nav>
-            <a class="logo" href="/">GH</a>
-            <div class="mobile-menu">
+        <nav id="menu" class="menu">
+            <a class="menu-logo" href="/">GH</a>
+            <div id="menu-mobile-btn" class="menu-mobile-btn">
                 <div class="line1"></div>
                 <div class="line2"></div>
                 <div class="line3"></div>
             </div>
-            <ul class="nav-list">
-                <li><a href="/index.html">Início</a></li>
-                <li><a href="/about.html">Sobre mim</a></li>
-                <li><a href="/projects.html">Projetos</a></li>
-                <li><a href="/curriculum.html">Currículo</a></li>
-                <li><a href="/contact.html">Contato</a></li>
+            <ul class="menu-list">
+                <li><a class="menu-list-btn" href="/index.html">Início</a></li>
+                <li><a class="menu-list-btn" href="/about.html">Sobre mim</a></li>
+                <li><a class="menu-list-btn" href="/projects.html">Projetos</a></li>
+                <li><a class="menu-list-btn" href="/curriculum.html">Currículo</a></li>
+                <li><a class="menu-list-btn" href="/contact.html">Contato</a></li>
             </ul>
         </nav>
     </header>
-    <main class="principal">
-        <section class="apresentacao__sobremim">
-            <h1 class="conteudo__titulo">Gabriel Henrique</h1>
-            <p class="apresentacao__conteudo__texto">Sou um estudante entusiasmado de Análise e Desenvolvimento de
-                Sistemas, atualmente no terceiro semestre de minha jornada educacional. Minha paixão pela programação e
-                resolução de problemas me impulsiona a explorar o universo do desenvolvimento de software.</p>
-            <p class="apresentacao__conteudo__texto">Desde o meu Ensino Médio Técnico em Mecatrônica no Colégio
-                Pentágono, onde fui introduzido à tecnologia, até a conclusão da graduação em Engenharia Mecânica na
-                UNINOVE, acumulei conhecimentos que moldaram minha abordagem multidisciplinar aos desafios. Essa
-                trajetória diversificada proporcionou uma base sólida em resolução de problemas e uma mentalidade
-                analítica.</p>
-            <p class="apresentacao__conteudo__texto">Com um certificado em Programação Orientada a Objetos em C# pela
-                Udemy e habilidades em inglês pré-avançado pela CNA, busco constantemente oportunidades para ampliar
-                meus horizontes. Concluí cursos como "Aprenda a programar em C# com Orientação a Objetos" e "A partir do
-                zero: HTML e CSS para projetos web" na Alura, fortalecendo minhas habilidades técnicas essenciais para o
-                desenvolvimento web.</p>
-            <p class="apresentacao__conteudo__texto">Atualmente, estou no terceiro semestre da graduação em Análise e
-                Desenvolvimento de Sistemas na FATEC. Meu objetivo é aplicar o conhecimento teórico em projetos práticos
-                e desafiadores, crescendo como desenvolvedor. Estou ansioso para contribuir com a indústria de software
-                através de abordagens práticas e colaborativas, e sempre aberto a novas oportunidades de aprendizado e
-                colaboração.</p>
-            <p class="apresentacao__conteudo__texto">Vamos construir o futuro juntos através do código!</p>
+
+    <main class="main">
+        <section class="main-content-about">
+            <h1 class="main-content-about-title">Sobre mim</h1>
+            <p class="main-content-about-text">Eu sempre gostei de tecnologia e de entender como as coisas
+                funcionam. Por isso, fiz o ensino médio técnico em mecatrônica no Colégio Pentágono, onde aprendi sobre
+                eletrônica, mecânica e automação. Depois, decidi seguir a carreira de engenharia mecânica na UNINOVE,
+                onde me formei em 2022. Durante a graduação, tive contato com algumas disciplinas de programação e
+                fiquei fascinado pelo mundo do software. Percebi que essa era a minha verdadeira paixão e que eu queria
+                mudar de área.</p>
+            <p class="main-content-about-text">Foi então que resolvi fazer outra graduação, desta vez em Análise e
+                Desenvolvimento de Sistemas na FATEC - Antonio Russo. Além da faculdade, também faço cursos online para
+                me aprofundar em linguagens e ferramentas específicas. Por exemplo, fiz dois cursos C# na Udemy e na
+                Alura. Também fiz um curso de HTML e CSS na Alura para aprender mais sobre desenvolvimento web.</p>
+            <p class="main-content-about-text">Além da programação, também tenho outras habilidades que podem ser
+                úteis no mercado de trabalho. Sou nível intermediário em inglês, pois conclui o curso pré avançado na
+                CNA. Também tenho facilidade para trabalhar em equipe, comunicar-me efetivamente e resolver problemas de
+                forma criativa.</p>
+            <p class="main-content-about-text">Estou cursando Análise e Desenvolvimento de Sistemas e quero
+                trabalhar com software. Sou apaixonado por programação e resolução de problemas e quero participar de
+                projetos desafiadores e aprender mais.</p>
         </section>
     </main>
-    <footer class="rodape rodape-about">
-        <p>Desenvolvido por Gabriel Henrique</p>
+
+    <footer class="footer">
+        <div class="footer-icons">
+            <a href="https://github.com/GroundWave96" target="_blank"><i class="fa-brands fa-github"></i></a>
+            <a href="https://instagram.com/gabriel.hfp" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/gabriel-pimentel-12bb83190/" target="_blank"><i
+                    class="fa-brands fa-linkedin"></i></a>
+            <a href="https://api.whatsapp.com/send?phone=+5511953725013&text=Ol%C3%A1%2C+vim+pelo+seu+portif%C3%B3lio%21+%F0%9F%91%8B"
+                target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+        <div class="footer-bottom">
+            <p>Copyright &copy;2023</p>
+            <p>Desenvolvido por Gabriel Henrique</p>
+        </div>
     </footer>
-    <script src="app.js"></script>
+
+    <script src="./app.js"></script>
+
 </body>
 
 </html>

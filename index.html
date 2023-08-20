@@ -3,63 +3,62 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gabriel Henrique</title>
-    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
-    <div class="site">
-        <header>
-            <nav>
-                <a class="logo" href="/">GH</a>
-                <div class="mobile-menu">
-                    <div class="line1"></div>
-                    <div class="line2"></div>
-                    <div class="line3"></div>
-                </div>
-                <ul class="nav-list">
-                    <li><a href="/index.html">Início</a></li>
-                    <li><a href="/about.html">Sobre mim</a></li>
-                    <li><a href="/projects.html">Projetos</a></li>
-                    <li><a href="/curriculum.html">Currículo</a></li>
-                    <li><a href="/contact.html">Contato</a></li>
-                </ul>
-            </nav>
-        </header>
 
-        <main class="principal">
-            <section class="apresentacao__conteudo">
-                <h1 class="apresentacao__conteudo__titulo">CodeJourney: A Caminhada de <strong
-                        class="titulo-destaque">Gabriel Henrique</strong> no Desenvolvimento de Software</h1>
-                <p class="apresentacao__conteudo__texto">Olá! Sou Gabriel Henrique, desenvolvedor com
-                    especialidade em C#, C, HTML, CSS e JavaScript. Com proficiência nessas linguagens, tenho a
-                    capacidade
-                    de
-                    transformar conceitos criativos em soluções funcionais e esteticamente agradáveis.</p>
-                <div class="apresentacao__links">
-                    <h2 class="apresentacao__links__subtitulo">Acesse minhas redes:</h2>
-                    <a class="apresentacao__links__navegacao" href="https://github.com/GroundWave96">
-                        <img src="./assets/github.png">
-                        GitHub</a>
-                    <a class="apresentacao__links__navegacao"
-                        href="https://www.linkedin.com/in/gabriel-pimentel-12bb83190/">
-                        <img src="./assets/linkedin.png">
-                        Linkedin</a>
-                    <a class="apresentacao__links__navegacao" href="https://instagram.com/gabriel.hfp">
-                        <img src="./assets/instagram.png">
-                        Instagram</a>
-                </div>
-            </section>
-            <img class="apresentacao__imagem" src="./assets/imagem.png" alt="Foto do Gabriel Henrique">
-        </main>
+    <header>
+        <nav id="menu" class="menu">
+            <a class="menu-logo" href="/">GH</a>
+            <div id="menu-mobile-btn" class="menu-mobile-btn">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+            <ul class="menu-list">
+                <li><a class="menu-list-btn" href="/index.html">Início</a></li>
+                <li><a class="menu-list-btn" href="/about.html">Sobre mim</a></li>
+                <li><a class="menu-list-btn" href="/projects.html">Projetos</a></li>
+                <li><a class="menu-list-btn" href="/curriculum.html">Currículo</a></li>
+                <li><a class="menu-list-btn" href="/contact.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
 
-        <footer class="rodape rodape-index">
+    <main class="main">
+        <section class="main-content">
+            <h1 class="main-content-title">CodeJourney: A Caminhada de <strong
+                    class="main-content-title-featured">Gabriel Henrique</strong> no Desenvolvimento de Software</h1>
+            <p class="main-content-text">Olá! Sou Gabriel Henrique, desenvolvedor com especialidade em C#, C, HTML, CSS
+                e JavaScript. Com proficiência nessas linguagens, tenho a capacidade de transformar conceitos criativos
+                em soluções funcionais e esteticamente agradáveis.</p>
+        </section>
+        <img class="main-image" src="./assets/imagem.png" alt="Foto do Gabriel Henrique">
+    </main>
+
+    <footer class="footer">
+        <div class="footer-icons">
+            <a href="https://github.com/GroundWave96" target="_blank"><i class="fa-brands fa-github"></i></a>
+            <a href="https://instagram.com/gabriel.hfp" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/gabriel-pimentel-12bb83190/" target="_blank"><i
+                    class="fa-brands fa-linkedin"></i></a>
+            <a href="https://api.whatsapp.com/send?phone=+5511953725013&text=Ol%C3%A1%2C+vim+pelo+seu+portif%C3%B3lio%21+%F0%9F%91%8B"
+                target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+        <div class="footer-bottom">
+            <p>Copyright &copy;2023</p>
             <p>Desenvolvido por Gabriel Henrique</p>
-        </footer>
-        <script src="app.js"></script>
-    </div>
+        </div>
+    </footer>
+
+    <script src="./app.js"></script>
+
 </body>
 
 </html>
