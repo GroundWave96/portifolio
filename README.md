@@ -14,7 +14,7 @@ https://portifolio-zeta-green.vercel.app/
 
 * CSS
 
-* Flex-box
+* JavaScript
 
 ## Feito por:
 
