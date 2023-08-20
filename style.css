@@ -48,7 +48,7 @@ header {
     align-items: center;
     font-family: var(--fonte-texto);
     background: var(--cor-hover);
-    height: 8svh;
+    height: 8vh;
 }
 
 .menu-list {
