@@ -19,6 +19,3 @@ https://portifolio-zeta-green.vercel.app/
 ## Feito por:
 
 ### Gabriel Henrique
-
-### Linkedin:
- https://www.linkedin.com/in/gabriel-pimentel-12bb83190/
