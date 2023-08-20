@@ -2,7 +2,7 @@
 
 Bem vindo ao meu projeto de portfólio.
 
-![image](https://github.com/GroundWave96/portifolio/assets/54560401/745eb4bb-27ea-432a-9b43-453a2cdb3bb3)
+![image](https://github.com/GroundWave96/portifolio/assets/54560401/6a3123df-2b1f-4eb8-9031-51d1899f25ff)
 
 ## Site:
 
