@@ -38,7 +38,7 @@ header {
 }
 
 .menu-logo:hover {
-    text-shadow: var(--cor-primaria) 0 0 5px, var(--cor-primaria) 0 0 5px, var(--cor-primaria) 0 0 5px;
+    text-shadow: var(--cor-primaria) 0 0 10px, var(--cor-primaria) 0 0 10px, var(--cor-primaria) 0 0 10px;
 }
 
 .menu {
@@ -65,7 +65,7 @@ header {
 }
 
 .menu-list-btn:hover {
-    text-shadow: var(--cor-terciaria) 0 0 5px, var(--cor-terciaria) 0 0 5px, var(--cor-terciaria) 0 0 5px;
+    text-shadow: var(--cor-terciaria) 0 0 10px, var(--cor-terciaria) 0 0 10px, var(--cor-terciaria) 0 0 10px;
 }
 
 .menu-mobile-btn {
@@ -94,7 +94,7 @@ header {
 }
 
 .main {
-    padding: 3% 15%;
+    padding: 3rem 15%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -126,10 +126,15 @@ header {
     text-align: justify;
 }
 
+.main-image {
+    width: 39.1%;
+    border-radius: 8px;
+}
+
 .main-content-about {
     display: flex;
     flex-direction: column;
-    gap: 38.4px;
+    gap: 42.8px;
     line-height: 33px;
 }
 
@@ -144,10 +149,15 @@ header {
     text-align: justify;
 }
 
+.main-content-projects-title {
+    font-size: 2rem;
+    font-family: var(--fonte-titulo);
+}
+
 .main-content-curriculum {
     display: flex;
     flex-direction: column;
-    gap: 36.2px;
+    gap: 40px;
     line-height: 33px;
 }
 
@@ -168,7 +178,7 @@ header {
     text-align: justify;
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
+    gap: 1.565rem;
 }
 
 .main-content-curriculum-link {
@@ -178,14 +188,107 @@ header {
     color: var(--cor-primaria);
 }
 
-.main-image {
-    width: 38%;
-    border-radius: 8px;
+.main-content-contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.main-content-contact-title {
+    font-size: 2rem;
+    font-family: var(--fonte-titulo);
+    margin-bottom: 0.55rem;
+}
+
+.main-content-contact-form {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    max-width: 40%;
+}
+
+.main-content-contact-form-label,
+.main-content-contact-form-input,
+.main-content-contact-form-textarea,
+.main-content-contact-form-button {
+    display: block;
+}
+
+.main-content-contact-form-input,
+.main-content-contact-form-textarea,
+.main-content-contact-form-button {
+    width: 100%;
+    font: inherit;
+    padding: 1.25rem;
+}
+
+.main-content-contact-form-input,
+.main-content-contact-form-textarea {
+    margin-bottom: 1rem;
+    color: var(--cor-terciaria);
+    background: var(--cor-hover);
+    border: 0.125rem solid transparent;
+    border-radius: 1.125rem;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.main-content-contact-form-input:hover,
+.main-content-contact-form-input:focus,
+.main-content-contact-form-textarea:hover,
+.main-content-contact-form-textarea:focus {
+    outline: none;
+    border-color: var(--cor-primaria);
+    box-shadow: 0 0 0 0.3125rem var(--cor-hover);
+}
+
+.main-content-contact-form-label {
+    margin-bottom: 0.7rem;
+    color: var(--cor-terciaria);
+    font-family: var(--fonte-titulo);
+}
+
+.main-content-contact-form-textarea {
+    height: 18.2rem;
+    resize: none;
+}
+
+.main-content-contact-form-button {
+    border: none;
+    border-radius: 1.125rem;
+    color: var(--cor-primaria);
+    background: var(--cor-hover);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.main-content-contact-form-button:hover,
+.main-content-contact-form-button:focus {
+    outline: none;
+    color: var(--cor-terciaria);
+    background: var(--cor-primaria);
+}
+
+.main-content-thanks {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    width: 100%;
+    height: calc(100svh - (8vh + 115px + 6rem));
+}
+
+.main-content-thanks-title {
+    font-size: 2rem;
+    font-family: var(--fonte-titulo);
+    text-align: center;
 }
 
 .footer {
     width: 100%;
-    height: 12vh;
+    height: 115px;
     background: var(--cor-primaria);
 }
 
@@ -257,9 +360,12 @@ header {
         display: block;
     }
 
-    .main {
+    .main-index {
         flex-direction: column-reverse;
-        padding: 7%;
+    }
+
+    .main {
+        padding: 2rem;
     }
 
     .main-content {
@@ -270,12 +376,25 @@ header {
         width: 95%;
     }
 
+    .main-content-contact-form {
+        width: 98%;
+        max-width: 98%;
+    }
+
+    .main-content-contact-form-textarea {
+        height: 23.4svh;
+    }
+
+    .main-content-thanks {
+        height: calc(100svh - (8vh + 140px + 4rem));
+    }
+
     .footer-bottom {
         flex-direction: column;
         gap: 5px;
     }
 
     .footer {
-    height: 140px;
+        height: 140px;
     }
 }
