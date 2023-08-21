@@ -220,16 +220,9 @@ header {
 
 .carousel a {
     height: 340px;
-    user-select: none;
-    margin-left: 14px;
-    width: calc(100% / 3);
-}
-
-.carousel a img {
-    height: 340px;
     object-fit: cover;
     user-select: none;
-    margin-left: 14px;
+    margin-left: 10px;
     width: calc(100% / 3);
 }
 
